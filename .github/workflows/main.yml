@@ -54,7 +54,7 @@ jobs:
           user: ${{ secrets.USER }}
           pass: ${{ secrets.SSH_PASSWORD}}
           script: |
-            echo "hello" > test.txt
+            docker images > test.txt
 #             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/houniao:collegeinfo
 #             docker rm -f collegeinfo || true
 #             docker run --name=collegeinfo -d -p 8080:8090 ${{ secrets.DOCKER_HUB_USERNAME }}/houniao:collegeinfo
