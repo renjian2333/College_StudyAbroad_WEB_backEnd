@@ -54,7 +54,7 @@ jobs:
           user: ${{ secrets.USER }}
           pass: ${{ secrets.SSH_PASSWORD}}
           script: |
-            docker pull renjian233/houniao:collegeinfo
+            docker pull renjian233/houniao:collegeinfo
 #             docker rm -f collegeinfo || true
 #             docker run --name=collegeinfo -d -p 8080:8090 ${{ secrets.DOCKER_HUB_USERNAME }}/houniao:collegeinfo
 #             docker image prune -af
