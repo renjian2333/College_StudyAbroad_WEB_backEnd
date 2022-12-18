@@ -53,5 +53,5 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           pass: ${{ secrets.SSH_PASSWORD}}
-          scp: ./start.sh => /home/renjian/start.sh
-          last_ssh: sh start.sh
+          scp: ./start.sh => ./start.sh
+          last_ssh: sh ./start.sh
