@@ -52,5 +52,5 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
-          pass: ${{ secrets.SSH_PASWORD}}
+          pass: ${{ secrets.SSH_PASSWORD}}
           script: sh start.sh
