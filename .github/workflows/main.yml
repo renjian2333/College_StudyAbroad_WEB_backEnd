@@ -26,7 +26,7 @@ jobs:
             ${{ runner.os }}-maven-
       # 编译打包      
       - name: Build with Maven
-        run: mvn package -Dmaven.test.skip=true
+        run: mvn clean package -Dmaven.test.skip=true
       # 登录Docker Hub  
       - name: Login to Docker Hub
         uses: docker/login-action@v2.1.0
@@ -55,5 +55,5 @@ jobs:
           script: |
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/houniao:collegeinfo
             (docker rm -f collegeinfo || true)
-            docker run --name=collegeinfo -d -p 8080:8090 ${{ secrets.DOCKER_HUB_USERNAME }}/houniao:collegeinfo
+            docker run --name=collegeinfo -d -p 8090:8090 ${{ secrets.DOCKER_HUB_USERNAME }}/houniao:collegeinfo
             docker image prune -af
