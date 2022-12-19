@@ -2,9 +2,9 @@ name: Deploy with docker
 
 on:
   push:
-    paths: "/src/**"
+    paths: "/src/main/**"
   pull_request:
-    paths: "/src/**"
+    paths: "/src/main/**"
 
 jobs:
   compile:
