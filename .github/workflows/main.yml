@@ -3,10 +3,10 @@ name: Deploy with docker
 on:
   push:
     branches: [ master ]
-    paths: "/src/main/**"
+#     paths: "/src/main/**"
   pull_request:
     branches: [ master ]
-    paths: "/src/main/**"
+#     paths: "/src/main/**"
 
 jobs:
   compile:
